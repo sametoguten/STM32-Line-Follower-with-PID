@@ -137,7 +137,7 @@ void sharp_turn () {
 		else
 			motor_control(100, -20);
 	}
-	else // bilal -53, 70
+	else 
 	{
 		if (last_end == 1)
 			motor_control(-53, 70);
@@ -238,8 +238,7 @@ int QTR8_read ()
 		last_idle++;
 	else
 		last_idle = 0;
-	
-	
+
 	return pos/active;
 }
 
@@ -348,9 +347,7 @@ int main(void)
   {
     /* USER CODE END WHILE */
 
-    /* USER CODE BEGIN 3 */
-
-		
+    /* USER CODE BEGIN 3 */		
 		PID_control();
 	}
   /* USER CODE END 3 */
