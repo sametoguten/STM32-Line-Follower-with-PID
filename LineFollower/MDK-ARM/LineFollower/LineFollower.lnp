@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"linefollower\startup_stm32f103xb.o"
+"linefollower\main.o"
+"linefollower\stm32f1xx_it.o"
+"linefollower\stm32f1xx_hal_msp.o"
+"linefollower\stm32f1xx_hal_gpio_ex.o"
+"linefollower\stm32f1xx_hal_tim.o"
+"linefollower\stm32f1xx_hal_tim_ex.o"
+"linefollower\stm32f1xx_hal.o"
+"linefollower\stm32f1xx_hal_rcc.o"
+"linefollower\stm32f1xx_hal_rcc_ex.o"
+"linefollower\stm32f1xx_hal_gpio.o"
+"linefollower\stm32f1xx_hal_dma.o"
+"linefollower\stm32f1xx_hal_cortex.o"
+"linefollower\stm32f1xx_hal_pwr.o"
+"linefollower\stm32f1xx_hal_flash.o"
+"linefollower\stm32f1xx_hal_flash_ex.o"
+"linefollower\stm32f1xx_hal_exti.o"
+"linefollower\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "LineFollower\LineFollower.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LineFollower.map" -o LineFollower\LineFollower.axf
