@@ -18,7 +18,7 @@ This repository contains implementation of an optimized PID controller for a lin
 - 6V DC motors x2
 - 12V battery
 - Wheels x2
-- Chasis
+- Chassis
 
 ### Required Software
 - [Keil µVision](https://www.keil.com/demo/eval/arm.htm)
